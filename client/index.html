@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Personal Portfolio Website
+    </title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div  id="header">
+        <div class="container">
+        <nav>
+            <a class="logo"><span>J</span>eeva<span>na</span>ndan</a>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Jeevanandan</span> <br>From India</h1>
+            <a href="images/JEEVANANDAN K.pdf" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+</div>
+<!---------------about------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Jeeva-about.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Welcome to my portfolio! I'm Jeevanandan K, a passionate full stack developer with a strong background in software engineering. With a Master's degree in Software Engineering and hands-on experience in various technologies, I have honed my skills in creating dynamic and responsive web applications.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML5</span><br>Structuring the content of the webpage, ensuring a well-organized layout.</li>
+                            <li><span>CSS</span><br>Styling the webpage to create a visually appealing and responsive design.</li>
+                            <li><span>JavaScript</span><br>Adding interactivity and dynamic elements to enhance user experience.</li>
+                            <li><span>Python</span><br>Handling server-side logic and backend processes for robust functionality.</li>
+                            <li><span>SQL</span><br>Managing and querying the database to efficiently store and retrieve data.</li>                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-Current</span><br>Full Stack Developer at AHV Consultancy services</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>SSLC at B.D.M.H.S School</li>
+                            <li><span>2018</span><br>HSC at B.D.M.H.S School</li>                            
+                            <li><span>2016</span><br>M.tech(Software Engineering) at VIT University</li>      
+                        </ul>                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------------services----------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-laptop-code"></i>
+                <h2>Front-End Development</h2>
+                <p>Expert in creating responsive and visually appealing web applications using HTML, CSS (Bootstrap), JavaScript, React, and other modern front-end technologies.</p>
+               
+            </div>
+            <div>
+                <i class="fas fa-cogs"></i>
+                <h2>Back-End Development</h2>
+                <p> Proficient in developing robust server-side applications with PHP, Python, Django, and Node.js, ensuring efficient data handling and security.</p>
+                
+            </div>
+            <div>
+                 <i class="fas fa-database"></i>
+                 <h2>Database Design & Implementation: </h2>
+                 <p>Experience in designing and implementing relational databases with MySQL and PostgreSQL, focusing on efficient data storage and retrieval.</p>
+                 
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------my work----------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/mywork2.jpg" alt="Netflix Clone">
+                <div class="layer">
+                    <h2>Netflix Clone using React JS</h2>
+                    <p>Developed a Netflix Clone using React, React Router, Redux, and Firebase. The platform features a sleek and user-friendly interface that allows users to browse and stream movies and TV shows.  React Router for seamless navigation, and Redux for efficient state management, the application ensures a smooth and dynamic user experience. Firebase was integrated for authentication and real-time data handling, providing secure and efficient backend support. The clone also includes features such as user authentication and personalized recommendations.</p>
+                    <a href="https://netflix-clone-e2069.web.app/profile">View</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/mywork1.jpg" alt="Credit Card Fraud Detection">
+                <div class="layer">
+                    <h2>Credit Card Fraud Detection</h2>
+                    <p>Developed a Credit Card Fraud Transaction Detection System using Django, Python, and advanced machine learning algorithms. The system is designed to analyze transaction data and identify fraudulent activities in real-time, offering high accuracy and efficiency. Django was used to build a robust and secure website, providing a user-friendly interface for administrators to monitor and manage transactions. The project showcases the application of data science techniques in enhancing financial security and protecting users from fraud.</p>
+                    <a href="https://github.com/jeeva1227/ebanking-fraud-detection.git">View</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/mywork3.jpg" alt="E-Commerce Website">
+                <div class="layer">
+                    <h2>E-Commerce Website Using Django</h2>
+                    <p>Designed and developed a comprehensive eCommerce platform that enables businesses to sell products online. The platform includes features like product catalog management, shopping cart functionality, registration, and sign-in pages. Built using Python and Django for the backend, Bootstrap for a responsive frontend, and PostgreSQL for data storage, the project offers a user-friendly interface and robust administrative tools for managing inventory, orders, and customer data.</p>
+                    <a href="https://github.com/jeeva1227/eshop.web.git">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------Contact us------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title1">Contact</h1>
+                <p><i class="fas fa-paper-plane"></i>Jeevanandankr@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>7558149878</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/immortal.joy__?igsh=YnljaW15aGU3anBu"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jeevanandan-k-5b6383234"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/jeeva1227"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="images/JEEVANANDAN K.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name"  placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <p class="copyright">&copy; 2024 Jeevanandan K. All Rights Reserved.</p>
+</div>
+
+<script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxoyUM_M5LuwVKwIuNSafd9-nCsyXYNeYJDSpS-cLq-0KeIxPY9wzrUiBXpmYFtC320ZA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
